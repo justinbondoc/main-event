@@ -93,7 +93,6 @@ img.logo
 img.profile
 {
 	overflow: hidden;
-	border-radius: 50%;
 	max-width: 50%;
 }
 
@@ -110,6 +109,8 @@ a:link
 	color: #000;
 }
 
+
+
 a.hero-btn
 {
 	display: inline-block;
@@ -118,17 +119,33 @@ a.hero-btn
 	transition: all 1s cubic-bezier(.25,.8,.25,1);
 	border-radius: 4px;
 	border: 1px solid #FFF;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 11.5px;
-	padding-right: 11.5px;
+	padding: 10px 11px;
 	margin-top: 40px;
 }
 
 a.hero-btn:hover
 {
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	background-color: #dadada;
 }
+
+
+a.page-btn
+{
+	display: inline-block;
+	text-decoration: none;
+	color: #FFF;
+	background-color: #ff7979;
+	transition: all 1s cubic-bezier(.25,.8,.25,1);
+	border-radius: 4px;
+	padding: 10px 11px;
+	margin-top: 10px;
+}
+
+a.page-btn:hover
+{
+	background-color: #ed2a2a;
+}
+
 
 a.appt-btn
 {
@@ -136,7 +153,6 @@ a.appt-btn
 	text-decoration: none;
 	color: #FFF;
 	border-radius: 4px;
-	padding: 10px 11.5px;
 	width: 100%;
 	padding: 10px 0;
 	margin: 0;
@@ -147,8 +163,7 @@ a.appt-btn
 
 a.appt-btn:hover
 {
-	background-color: #5a84ad;
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	background-color: #22609b;
 }
 
 a.appt-btn-nul
@@ -162,26 +177,6 @@ a.appt-btn-nul
 	padding: 10px 0px;
 	width: 100%;
 }
-
-
-a.page-btn
-{
-	display: inline-block;
-	text-decoration: none;
-	color: #FFF;
-	background-color: #ff7979;
-	transition: all 1s cubic-bezier(.25,.8,.25,1);
-	border-radius: 4px;
-	padding: 10px 5px;
-	margin-top: 10px;
-}
-
-a.page-btn:hover
-{
-	background-color: #f56969;
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-}
-
 
 
 /*== Navigation ==*/
@@ -439,6 +434,8 @@ div.profile-tiles-layout > div:nth-child(1)
 div.profile-tiles-layout > div:nth-child(2)
 {
 	width: 100%;
+	border-bottom: 1px solid #dadada;
+	margin-bottom: 10px;
 }
 
 
@@ -570,7 +567,17 @@ div.jb a:visited
 
 @media only screen and (max-width: 767px)
 {
-
+	
+	p.about-title
+	{
+		margin-top: 20px;
+	}
+	
+	img.profile
+	{
+		max-width: 75%;
+	}
+	
 	img.logo
 	{
 		max-width: 95%;
@@ -634,12 +641,14 @@ div.jb a:visited
 
 	div.profile-tiles-layout > div:nth-child(1)
 	{
-		width: 25%;
+		width: 40%;
 	}
 
 	div.profile-tiles-layout > div:nth-child(2)
 	{
-		width: 75%;
+		width: 60%;
+		margin: 0;
+		border: none;
 	}
 
 
