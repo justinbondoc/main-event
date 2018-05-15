@@ -399,7 +399,8 @@ div.profile-tiles > div:nth-child(3)
 	width: 17%;
 	margin-left: 1%;
 }
-
+/*profile-tiles-2 can be used for when there are 2 tiles needed instead of 3*/
+/*
 div.profile-tiles-2	
 {
 	margin-left: auto;
@@ -448,9 +449,7 @@ div.profile-tiles-2 > div:nth-child(2)
 {
 	width: 17%;
 	margin-left: 1%;
-}
-
-
+}*/
 
 div.profile-tiles-layout
 {
